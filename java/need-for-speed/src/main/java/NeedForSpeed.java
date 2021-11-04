@@ -11,8 +11,7 @@ class NeedForSpeed {
     }
     
     public boolean batteryDrained() {
-        if (battery>0) return false;
-        else return true;
+        return battery<1;
     }
 
     public int distanceDriven() {
@@ -57,7 +56,6 @@ class RaceTrack {
         int speed = car.getSpeed();
         int maxDistance = (battery/drain)*speed;
 
-        if(maxDistance>=distance) return true;
-        else return false;
+        return maxDistance>=distance;
     }
 }
