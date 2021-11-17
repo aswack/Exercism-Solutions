@@ -1,3 +1,6 @@
+# Project exclude paths
+/out/
+
 # Compiled class file
 *.class
 
@@ -23,3 +26,8 @@
 hs_err_pid*
 
 .DS_Store
+
+*.idea
+/.idea/
+
+*.iml
